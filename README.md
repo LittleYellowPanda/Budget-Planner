@@ -67,7 +67,10 @@ C'est la méthode la plus simple pour commencer si vous avez Python sur votre ma
 
 3.  **Installez les dépendances :**
     ```bash
-    pip install -r requirements.txt
+          
+    pip install pip-tools
+    pip-compile pyproject.toml -o requirements.txt
+
     ```
 
 4.  **Lancez l'application Streamlit :**
