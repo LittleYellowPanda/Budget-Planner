@@ -26,12 +26,11 @@ L'application est organisée en quatre pages principales pour un flux de travail
 mon_budget_app/
 ├── Dockerfile              # Instructions pour construire l'image Docker
 ├── README.md               # Ce fichier
-├── main_app.py             # Point d'entrée de l'application Streamlit
-├── requirements.txt        # Dépendances Python
+├── 1_🗿_Budget_B_Family.py           # Point d'entrée de l'application Streamlit
+├── pyproject.toml      # Dépendances Python
 ├── data/
 │   └── transactions.csv    # Votre base de données ! Toutes les transactions sont ici.
 ├── pages/
-│   ├── 1_📊_Tableau_de_Bord.py
 │   ├── 2_✍️_Saisie_des_Transactions.py
 │   ├── 3_🔍_Analyse_Détaillée.py
 │   └── 4_💡_Conseils_&_Stratégie.py
@@ -75,7 +74,7 @@ C'est la méthode la plus simple pour commencer si vous avez Python sur votre ma
 
 4.  **Lancez l'application Streamlit :**
     ```bash
-    streamlit run main_app.py
+    streamlit run 1_🗿_Budget_B_Family.py
     ```
     Votre navigateur devrait s'ouvrir automatiquement à l'adresse `http://localhost:8501`.
 
