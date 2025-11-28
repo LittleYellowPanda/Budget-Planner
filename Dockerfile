@@ -8,11 +8,11 @@ WORKDIR /app
 # Step 3: Copy the requirements file into the container.
 # This is done first to leverage Docker's layer caching.
 # If requirements.txt doesn't change, Docker won't reinstall dependencies on subsequent builds.
-COPY requirements.txt .
+COPY pyproject.toml .
 
 # Step 4: Install the Python dependencies.
 # --no-cache-dir makes the image smaller.
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r pyproject.toml
 
 # Step 5: Copy the rest of your application's code into the container.
 # This includes your .py files and the 'assets' and 'data' folders.
